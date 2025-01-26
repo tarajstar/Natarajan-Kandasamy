@@ -94,25 +94,19 @@ namespace Calculator.ViewMadel
             }
 
             double result = 0;
-            string operatorString = string.Empty;
-
-            switch (calculatorModel._operator)
+             switch (calculatorModel._operator)
             {
                 case "+":
                     result = _Addition.Operation(calculatorModel.firstNumber, calculatorModel.secondNumber);
-                    operatorString = "Addition";
-                    break;
-                case "−":
+                     break;
+                case "-":
                     result = _Subtraction.Operation(calculatorModel.firstNumber, calculatorModel.secondNumber);
-                    operatorString = "Subtraction";
                     break;
                 case "*":
                     result = _Multiplication.Operation(calculatorModel.firstNumber, calculatorModel.secondNumber);
-                    operatorString = "Multiplication";
                     break;
                 case "/":
                     result = _Division.Operation(calculatorModel.firstNumber, calculatorModel.secondNumber);
-                    operatorString = "Division";
                     break;
             }
 
